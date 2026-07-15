@@ -22,7 +22,7 @@ Requires Python 3.11+.
 python3 scripts/generate_sample_data.py
 python3 scripts/run_demo.py
 python3 scripts/evaluate_agents.py
-python3 -m pytest -q
+uv run --python 3.12 --with 'pytest>=8,<9' python -m pytest -q
 ```
 
 Or use the Makefile:

@@ -14,7 +14,7 @@ evaluate: generate
 	python3 scripts/evaluate_agents.py
 
 test:
-	python3 -m pytest -q
+	uv run --python 3.12 --with 'pytest>=8,<9' python -m pytest -q
 
 clean:
 	rm -rf data/generated reports/*.md reports/*.json .pytest_cache
