@@ -7,3 +7,5 @@ __pycache__/
 reports/*.md
 reports/*.json
 data/generated/
+*.egg-info/
+uv.lock
