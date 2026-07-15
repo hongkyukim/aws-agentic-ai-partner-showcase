@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/aws_agentic_ai_partner_showcase.egg-info/PKG-INFO
+src/aws_agentic_ai_partner_showcase.egg-info/SOURCES.txt
+src/aws_agentic_ai_partner_showcase.egg-info/dependency_links.txt
+src/aws_agentic_ai_partner_showcase.egg-info/requires.txt
+src/aws_agentic_ai_partner_showcase.egg-info/top_level.txt
+src/partner_agent_stack/__init__.py
+src/partner_agent_stack/stack.py
+tests/test_stack.py

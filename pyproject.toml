@@ -1,0 +1,17 @@
+[project]
+name = "aws-agentic-ai-partner-showcase"
+version = "0.1.0"
+description = "Local-first workshop for production-ready agentic AI systems"
+requires-python = ">=3.11,<3.14"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8.0,<9"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["setuptools>=77,<83"]
+build-backend = "setuptools.build_meta"
