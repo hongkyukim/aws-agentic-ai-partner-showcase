@@ -1,6 +1,6 @@
 # AWS Agentic AI Partner Showcase Extended
 
-A hands-on companion repository for a production-minded agentic AI workshop featuring the development perspectives of **AWS**, **MongoDB**, and **Mastra**.
+A hands-on companion repository for a production-minded agentic AI workshop featuring the development perspectives of **AWS**, **MongoDB**, and **LangChain**.
 
 The default path is deliberately local and credential-free. Attendees build, test, trace, and review a customer-support agent before mapping the same seams to managed services.
 
@@ -81,21 +81,21 @@ The local code keeps the interfaces intentionally small:
 
 ## Partner and platform map
 
-This repo is a teaching scaffold, not an official AWS, MongoDB, or Mastra sample. Use the official documentation and account-specific guidance for the cloud path.
+This repo is a teaching scaffold, not an official AWS, MongoDB, or LangChain sample. Use the official documentation and account-specific guidance for the cloud path.
 
 | Perspective | Workshop connection | Optional extension |
 |---|---|---|
 | AWS | production runtime, model access, IAM, deployment, monitoring | replace local model/tool seams with the AWS services approved for your account; document region, cost, and IAM assumptions |
 | MongoDB | operational ticket/customer records, retrieval context, trace persistence | persist `Ticket` and `Decision` documents; add indexes and an Atlas Vector Search design for grounded context |
-| Mastra | agent, workflow, tool, and evaluation composition | port `AgentOrchestrator` into a TypeScript Mastra application while preserving the policy gate |
+| LangChain | agent, workflow, tool, and evaluation composition | port `AgentOrchestrator` into a LangChain application while preserving the policy gate |
 
-**Speaker context:** Abhijit Chakraborty (MongoDB), Sam Bhagwat (Mastra), and Sathisan Vannadil (AWS) are reflected as the perspectives in the event brief supplied for this workshop. Verify event logistics and current product names before presenting externally.
+**Speaker context:** Abhijit Chakraborty (MongoDB), Andrew Selden (LangChain), Doug Mbaya (AWS), and Karan Singh (Head of Partnerships; organization was not specified in the supplied notes) are reflected in the event brief supplied for this workshop. Verify event logistics and current product names before presenting externally.
 
 ## Labs
 
 - [01 — Local production baseline](labs/01-local-baseline.md)
 - [02 — MongoDB persistence and retrieval](labs/02-mongodb.md)
-- [03 — Mastra orchestration](labs/03-mastra.md)
+- [03 — LangChain orchestration](labs/03-langchain.md)
 - [04 — AWS deployment and operations](labs/04-aws.md)
 - [05 — Evaluation, traces, and safety](labs/05-evaluation.md)
 
@@ -113,6 +113,20 @@ This repo is a teaching scaffold, not an official AWS, MongoDB, or Mastra sample
 4. **Keep the local path deterministic.** Cloud credentials are optional, and evaluation must remain runnable offline.
 5. **Name production assumptions.** Record model, region, data residency, retention, timeout, cost, and rollback decisions.
 
+## Who should attend
+
+- Developers, engineers, and builders shipping agentic AI workflows in production
+- Engineering leaders and decision makers evaluating agentic AI solutions
+- Working professionals learning agentic AI technologies
+
+## Event agenda
+
+- **5:00 PM–6:00 PM** — Check-in, food, and booth visiting
+- **6:00 PM–7:45 PM** — Kick-off, tech talks, and live demo
+- **7:45 PM–8:30 PM** — Networking and Q&A at the partner booths
+
+The extended showcase focuses on production-ready agentic AI, technical implementation strategies, AWS integration patterns, and direct expert Q&A with AWS and partner teams.
+
 ## Safety and cost
 
 This workshop uses synthetic data only. Do not place credentials, customer data, or production identifiers in the repository. The optional cloud path should be run with least-privilege credentials, explicit budgets, and an approval step before provisioning resources.
@@ -124,5 +138,5 @@ The links below are starting points for the live workshop; product APIs and serv
 - [AWS documentation](https://docs.aws.amazon.com/)
 - [Amazon Bedrock](https://aws.amazon.com/bedrock/)
 - [MongoDB AI resources](https://www.mongodb.com/products/platform/atlas-vector-search)
-- [Mastra documentation](https://mastra.ai/docs)
-- [Mastra GitHub](https://github.com/mastra-ai/mastra)
+- [LangChain documentation](https://python.langchain.com/docs/)
+- [LangChain GitHub](https://github.com/langchain-ai/langchain)
